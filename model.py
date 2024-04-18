@@ -9,6 +9,9 @@ def load_homepage():
     data = ingest_data('traffic.csv')
     return render_template("index.html")
 
+@app.route("/prediction", methods=["GET", "POST"])
+def load_prediction():
+    return render_template("prediction.html")
 
 @app.route("/predictor", methods=["GET", "POST"])
 def load_predictor():
