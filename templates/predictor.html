@@ -1,35 +1,36 @@
 <head>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
 </head>
+
 <body>
-<div>
-<h1>
-    Test the model!
-</h1> 
-</div>
-<br>
-<div>
-<h2>
-    Enter in today's weather to see the best form of transit.
-</h2>
-</div>
-<br>
-<form action="/prediction" class="form">
-    <label for="temp">
-        Temperature in Celsius:
-    </label>
-    <input type="text" id="temp" name="temp"></input>
+    <div>
+        <h1>
+            Test the model!
+        </h1>
+    </div>
     <br>
-    <label for="rain">
-        Rain in mm:
-    </label>
-    <input type="text" id="rain" name="rain"></input>
+    <div>
+        <h2>
+            Enter in today's weather to see the best form of transit.
+        </h2>
+    </div>
     <br>
-    <label for="wind">
-        Wind speed in km/h:
-    </label>
-    <input type="text" id="wind" name="wind"></input>
-    <br>
-    <input class="submit-button" type="submit" value="submit"></input>
-</form>
+    <form action="/prediction" class="form">
+        <label for="temp">
+            Temperature in Celsius:
+        </label>
+        <input type="text" id="temp" name="temp"></input>
+        <br>
+        <label for="rain">
+            Rain in mm:
+        </label>
+        <input type="text" id="rain" name="rain"></input>
+        <br>
+        <label for="wind">
+            Wind speed in km/h:
+        </label>
+        <input type="text" id="wind" name="wind"></input>
+        <br>
+        <input class="submit-button" type="submit" value="submit"></input>
+    </form>
 </body>
