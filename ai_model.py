@@ -95,8 +95,8 @@ dls = TabularDataLoaders.from_df(
 learn = tabular_learner(dls, metrics=accuracy)
 learn.fit_one_cycle(1)
 
-# row, clas, probs = learn.predict(merged_df.iloc[1200])
+row, clas, probs = learn.predict(merged_df.iloc[1200])
 
-# row.show()
+row.show()
 
 print('MADE IT')
